@@ -1,0 +1,100 @@
+/* Basic Styling */
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    background-color: #000; /* Black Background */
+    color: #FFF; /* White Radium Text */
+}
+
+.stopwatch-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h1 {
+    color: #FF4500; /* Radium Color */
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+#display {
+    display: flex;
+    align-items: baseline;
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    background-color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #FF4500;
+}
+
+.time-part {
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+.hours {
+    font-size: 2em; /* Larger Size for Hours */
+}
+
+.minutes {
+    font-size: 2em; /* Larger Size for Minutes */
+}
+
+.seconds {
+    font-size: 1.5em; /* Slightly Smaller Size for Seconds */
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    padding: 15px 30px;
+    margin: 10px 0;
+    font-size: 1em;
+    border: 2px solid #FF4500; /* White Radium Shadow Border */
+    border-radius: 5px;
+    color: #FFF; /* White Text */
+    background-color: #000; /* Black Background */
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px #FF4500; /* Radium Shadow */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #333; /* Darker Black on Hover */
+    box-shadow: 0 0 15px #FF4500; /* Increased Radium Shadow */
+}
+
+button:active {
+    background-color: #555; /* Even Darker Black on Active */
+    box-shadow: 0 0 20px #FF4500; /* Further Increased Radium Shadow */
+}
+
+#lap-times {
+    margin-left: 50px;
+    flex-grow: 1;
+    font-size: 1.2em;
+    color: #FFF;
+}
+
+#lap-times div {
+    margin: 5px 0;
+    padding: 5px;
+    background-color: #222; /* Dark Gray for Lap Times */
+    border: 1px solid #FF4500;
+    border-radius: 5px;
+}
